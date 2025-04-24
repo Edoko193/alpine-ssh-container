@@ -9,7 +9,7 @@ Purpose of this is using with `ssh` and `sshfs` and gaining  `vscode/dev-contain
 Keep in mind that this docker file built with no security with mind. Its assumed that your computer's or your modem's firewall already blocking this ports to the outside. If you want to use it in internal networks, please harden it.
 
 # How to use it.
-First, keep in mind that every time you started a new container, sshd key will change and ssh will warn you about it. You should remove ~/.ssh everytime for a new container.
+First, keep in mind that every time you started a new container, sshd key will change and ssh will warn you about it. You should remove `~/.ssh` everytime for a new container.
 
 you build it `Dockerfile` with:
 ```
