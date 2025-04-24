@@ -38,6 +38,12 @@ After finished unmount with:
 fusermount -u /your/desired/mount/point
 ```
 
+# Gaining root privileges in container
+`doas`(sudo replacement) is installed. For drop in root shell use:
+```
+doas su
+```
+
 # I want to change default user
 Sure default user's username defined in "USERNAME" variable and default password is in "PASSWORD", you can either change it in `Dockerfile` or define as variable when building container.
 
