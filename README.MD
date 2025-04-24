@@ -6,7 +6,7 @@ Hi this is my setup for sshing container.
 Purpose of this is using with `ssh` and `sshfs` and gaining  `vscode/dev-containers` functionality with any ide you desire.
 
 # Warning
-Keep in mind that this docker file built with no security with mind. Its assumed that your computer's or your modem's firewall already blocking this ports to the outside. If you want to use it in internal networks, please harden it.
+Keep in mind that this docker file built with no security in mind. Its assumed that your computer's or your modem's firewall already blocking this ports to the outside. If you want to use it in internal networks, please harden it.
 
 # How to use it.
 First, keep in mind that every time you started a new container, sshd key will change and ssh will warn you about it. You should remove `~/.ssh` everytime for a new container.
