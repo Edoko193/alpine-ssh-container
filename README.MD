@@ -3,7 +3,7 @@ Hi this is my setup for sshing container.
 
 # Why? 
 
-Purpose of this is using with `ssh` and sshfs` and gaining  `vscode/dev-containers` functionality with any ide you desire.
+Purpose of this is using with `ssh` and `sshfs` and gaining  `vscode/dev-containers` functionality with any ide you desire.
 
 # Warning
 Keep in mind that this docker file built with no security with mind. Its assumed that your computer's or your modem's firewall already blocking this ports to the outside. If you want to use it in internal networks, please harden it.
