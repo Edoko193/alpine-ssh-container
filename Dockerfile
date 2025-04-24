@@ -14,7 +14,7 @@ RUN echo "PermitRootLogin no" >> /etc/ssh/sshd_config.d/20-deny_root.conf
 RUN echo "AllowUsers $USERNAME" >> /etc/ssh/sshd_config.d/20-allow_users.conf
 RUN echo "$USERNAME:$PASSWORD" | chpasswd
 
-# touch command is For running openrc in container so we can use our init system. First command returns error, in order to continue I added `|| true` to Dockerfile
+# First command returns error, in order to continue I added `|| true` to Dockerfile
 # Why openrc instead of starting normally? Because if you check alpine's openssh openrc script they do a little bit hardening and I like that.
 RUN rc-update add sshd && rc-status && rc-service sshd start || true
 
